@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Torvia</title>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo" onclick="window.location.reload()"></div>
+        <nav>
+            <ul>
+                <li><a href="#HOME">Home</a></li>
+                <li><a href="#SOBRENOS">Sobre Nós</a></li>
+                <li><a href="#COMPRA">Comprar Carro</a></li>
+                <li><a href="#CONTATO">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="pesquisa">
+        <input type="text" placeholder="Pesquisar">
+        <i class="fa-solid fa-magnifying-glass" style="color: rgb(30, 27, 78);"></i>
+        </div>
+        <div class="cadastrar"  onclick="window.location.href='cadastro.html'">
+            <i class="fa-regular fa-circle-user fa-lg" style="color: rgb(30, 27, 78);"></i>
+            <p>Cadastre-se</p>
+        </div>
+    </header>
+    <section id="HOME">
+        <div class="espacotop"></div>
+        <div class="corpo">
+            <div class="sombra">
+                <h1>O próximo capítulo da sua jornada começa ao volante.</h1>
+                <h2>Encontre o carro que combina <br>perfeitamente com as suas conquistas.</h2>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+    <section class="homedois">
+        <div class="caixapaiL">
+            <div class="caixalaranja">
+                <div class="linhas linhasL">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h2>Seu próximo destino começa com a escolha certa.</h2>
+                <div class="linhas linhasR">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="infohome">
+            <div class="info imginfo1">
+                <h2>Quem somos?</h2>
+                <h3 id="HOME2">Conheça nossa empresa e encontre uma experiência de <br> compra feita para oferecer confiança, transparência e <br> qualidade.</h3>
+                <a href="#SOBRENOS">Conheça nossa empresa →</a>
+            </div>
+            <div class="info imginfo2">
+                <h2>Encontre seu carro</h2>
+                <h3>Escolha seu próximo carro com facilidade e consulte <br> opções de compra e condições de pagamento que <br> combinam com você.</h3>
+                <a href="#COMPRA">Ver opções de compra →</a>
+            </div>
+            <div class="info imginfo3">
+                <h2>Qualidade e confiança</h2>
+                <h3>Trabalhamos para oferecer veículos selecionados e uma <br> experiência de compra com segurança e atenção em <br> cada detalhe.</h3>
+                <a href="#QUALIDADES">Conheça nossa qualidade →</a>
+            </div>
+        </div>
+        <div class="logos">
+            <h2>Confira as Lojas Oficiais</h2>
+
+            <div class="caixaL">
+                <button class="setinha setinhaE" id="anterior">&#8249;</button>
+
+                <div class="janela">
+                    <div class="trilha" id="trilha">
+                        <div class="conjuntologo" onclick="window.open('https://toyota.com.br', '_blank')">
+                            <div class="circulo">
+                                <div class="toyota"></div>
+                            </div>
+                            <p>TOYOTA</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www2.mercedes-benz.com.br/', '_blank')">
+                            <div class="circulo">
+                                <div class="mercedes"></div>
+                            </div>
+                            <p>Mercedes Benz</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.bmw.com.br/pt/index.html', '_blank')">
+                            <div class="circulo">
+                                <div class="bmw"></div>
+                            </div>
+                            <p>BMW</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.tesla.com/', '_blank')">
+                            <div class="circulo">
+                                <div class="tesla"></div>
+                            </div>
+                            <p>TESLA</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.honda.com.br/', '_blank')">
+                            <div class="circulo">
+                                <div class="honda"></div>
+                            </div>
+                            <p>HONDA</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.vw.com.br/pt.html', '_blank')">
+                            <div class="circulo">
+                                <div class="volkswagen"></div>
+                            </div>
+                            <p>VOLKSWAGEN</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.fiat.com.br/', '_blank')">
+                            <div class="circulo">
+                                <div class="fiat"></div>
+                            </div>
+                            <p>FIAT</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.jeep.com.br/', '_blank')">
+                            <div class="circulo">
+                                <div class="jeep"></div>
+                            </div>
+                            <p>JEEP</p>
+                        </div>
+                        <div class="conjuntologo" onclick="window.open('https://www.hyundai.com.br/', '_blank')">
+                            <div class="circulo">
+                                <div class="hyundai"></div>
+                            </div>
+                            <p id="SOBRENOS">HYUNDAI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="setinha setinhaD" id="proximo">&#8250;</button>
+            </div>
+
+            <div class="pontos">
+                <button class="ponto"></button>
+                <button class="ponto"></button>
+                <button class="ponto"></button>
+                <button class="ponto"></button>
+            </div>
+        </div>
+    </section>
+    <section class="sobreNos">
+        <div class="caixa1S" id="QUALIDADES">
+            <div class="textsobrenos">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma empresa especializada no mercado automotivo, dedicada a oferecer veículos de qualidade e uma experiência de compra segura e tranquila. Trabalhamos para entender as necessidades de cada cliente, oferecendo opções que combinam com diferentes perfis e objetivos. Nosso compromisso é proporcionar um atendimento próximo, profissional e confiável, tornando cada etapa da compra mais simples e agradável.</p>
+            </div>
+            <div class="imgempresa"></div>
+        </div>
+        <div class="caixa2S">
+            <div class="tituloC2S">
+                <span></span>
+                <h2>Nossos Valores</h2>
+                <span></span>
+            </div>
+            <div class="conjuntovalores">
+                <div class="conjuntoF confianca">
+                    <div class="imagem Iaperto"></div>
+                    <h2>Confiança</h2>
+                    <p>Construímos relações <br> baseadas em respeito, <br> segurança e confiança.</p>
+                </div>
+                <div class="conjuntoF qualidade">
+                    <div class="imagem Iselo"></div>
+                    <h2>Qualidade</h2>
+                    <p>Veículos selecionados com cuidado <br> para garantir qualidade em cada <br> escolha.</p>
+                </div>
+                <div class="conjuntoF atendimento">
+                    <div class="imagem Iatendente"></div>
+                    <h2>Atendimento</h2>
+                    <p>Atendimento personalizado <br> para ajudar você em todas <br> as etapas da compra.</p>
+                </div>
+                <div class="conjuntoF segurança">
+                    <div class="imagem Iescudo"></div>
+                    <h2>Segurança</h2>
+                    <p>Mais tranquilidade para você <br> através de um processo de <br> compra seguro.</p>
+                </div>
+            </div>
+        </div>
+        <div class="caixa3S">
+            <div class="imgequipe"></div>
+            <div class="textsobrenos">
+                <h2>Nossa História</h2>
+                <p id="COMPRA">Nossa história foi construída através de dedicação, trabalho e compromisso com nossos clientes. Ao longo dos anos, buscamos evoluir constantemente, aprimorando nossos serviços e fortalecendo nossa relação com cada pessoa que escolhe nossa empresa. Hoje, seguimos com o propósito de oferecer veículos de qualidade, atendimento personalizado e uma experiência de compra baseada em confiança, segurança e respeito.</p>
+            </div>
+        </div>
+    </section>
+    <section class="carros">
+        <div class="linhacar1">
+            <h2>Veículos disponíveis</h2>
+            <div class="modelos">
+                <p>SUV</p>
+                <p>Hatch</p>
+                <p>Sedã</p>
+                <p>Picape</p>
+                <p>Minivan</p>
+                <p>Cupê</p>
+                <p>Conversível</p>
+                <p>Perua/SW</p>
+                <p>Van/Utilitário</p>
+            </div>
+            <div class="carrossel-carros">
+
+                <button class="setacar esquerda" onclick="moverCarros(-1)">&#8249;</button>
+                
+                <div class="paiboxcars">
+                    <div class="trilha-carros">
+                        <div class="boxcar Cross">
+                            <div class="logocar Volkswagen"></div>
+                            <p>Volkswagen <br> T-Cross</p>
+                        </div>
+                        
+                        <div class="boxcar Pulse">
+                            <div class="logocar Fiat"></div>
+                            <p>Fiat <br> Pulse</p>
+                        </div>
+
+                        <div class="boxcar Creta">
+                            <div class="logocar Hyundai"></div>
+                            <p>Hyundai <br> Creta</p>
+                        </div>
+
+                        <div class="boxcar Song">
+                            <div class="logocar BYD"></div>
+                            <p>BYD <br> Song</p>
+                        </div>
+
+                        <div class="boxcar Tracker">
+                            <div class="logocar Chevrolet"></div>
+                            <p>Chevrolet <br> Tracker</p>
+                        </div>
+
+                        <div class="boxcar Compass">
+                            <div class="logocar Jeep"></div>
+                            <p>Jeep <br> Compass</p>
+                        </div>
+
+                        <div class="boxcar Polo">
+                            <div class="logocar Volkswagen"></div>
+                            <p>Volkswagen <br> Polo</p>
+                        </div>
+
+                        <div class="boxcar Strada">
+                            <div class="logocar Fiat"></div>
+                            <p>Fiat <br> Strada</p>
+                        </div>
+
+                        <div class="boxcar Tera">
+                            <div class="logocar Volkswagen"></div>
+                            <p>Volkswagen <br> Tera</p>
+                        </div>
+
+                        <div class="boxcar Argo">
+                            <div class="logocar Fiat"></div>
+                            <p>Fiat <br> Argo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="setacar direita" onclick="moverCarros(1)">&#8250;</button>
+            
+            </div>
+            <div class="tracos">
+                <span class="traco ativo"></span>
+                <span class="traco"></span>
+                <span class="traco"></span>
+                <span class="traco"></span>
+                <span class="traco"></span>
+            </div>
+        </div>
+        <div class="linhacar2">
+            <h2>Modelos mais vendidos</h2>
+            <div class="paiboxcars">
+                <div class="boxcar Strada">
+                    <div class="logocar Fiat"></div>
+                    <p>Fiat <br> Strada</p>
+                </div>
+                <div class="boxcar Polo">
+                    <div class="logocar Volkswagen"></div>
+                    <p>Volkswagen <br> Polo</p>
+                </div>
+                <div class="boxcar Mini">
+                    <div class="logocar BYD"></div>
+                    <p>BYD <br> Dolphin Mini</p>
+                </div>
+                <div class="boxcar Cross">
+                    <div class="logocar Volkswagen"></div>
+                    <p>Volkswagen <br> T-Cross</p>
+                </div>
+                <div class="boxcar Tera">
+                    <div class="logocar Volkswagen"></div>
+                    <p>Volkswagen <br> Tera</p>
+                </div>
+                <div class="boxcar Argo">
+                    <div class="logocar Fiat"></div>
+                    <p>Fiat <br> Argo</p>
+                </div>
+            </div>
+        </div>
+        <div class="linhacar3">
+            <h2>Itens curtidos</h2>
+            <p id="CONTATO">Nenhum item curtido ...</p>
+        </div>
+    </section>
+    <section class="contatos">
+        <div class="area-formulario">
+            <h2>Contatos</h2>
+            <form class="formulario">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <textarea placeholder="Assunto..." required></textarea>
+                <p>
+                    Clique <a href="">aqui</a> para cadastrar-se
+                </p>
+                <input type="submit" value="Enviar" >
+            </form>
+        </div>
+        <div class="informacoes">
+            <h2>Fale conosco</h2>
+            <p class="info-text-fale-conosco">
+                Tem alguma dúvida, sugestão ou precisa de ajuda?
+                Entre em contato conosco! Nossa equipe está à disposição
+                para atender você, esclarecer suas dúvidas e ajudar no que
+                for necessário. Envie sua mensagem pelo formulário ao lado
+                e responderemos o mais breve possível. Estamos sempre
+                buscando oferecer um bom atendimento e tornar sua
+                experiência cada vez melhor. Não hesite em entrar em
+                contato conosco sempre que precisar!
+            </p>
+            <p>Localização: Leme, São Paulo – Brasil</p>
+            <p>E-mail da empresa: torvia@gmail.com</p>
+            <p>Número de telefone da empresa: (19) 99671-4835</p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="historia">
+                <img src="img/logo.png" alt="Logo Torvia" width="150" onclick="window.location.reload()">
+                <h3>História e Visão</h3>
+                <p>
+                    Nascida em 2024, a Torvia é a plataforma
+                    pioneira de leilões e compra de veículos
+                    premium, redefinindo o luxo automotivo.
+                </p>
+            </div>
+            <div class="navegacao">
+                <h3>Navegação Rápida</h3>
+                <a href="#HOME"><b>⟶</b> Home</a>
+                <a href="#HOME2"><b>⟶</b> Lojas oficiais</a>
+                <a href="#SOBRENOS"><b>⟶</b> Sobre Nós</a>
+                <a href="#COMPRA"><b>⟶</b> Produtos</a>
+            </div>
+            <div class="espaco-footer"></div>
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p>
+                    Avenida das Palmeiras, 245 -<br>
+                    Centro, Leme - SP
+                </p>
+            </div>
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+                <div class="rede"><i class="fa-brands fa-youtube fa-lg" style="color: #F04A00 !important;"></i><p>@torviaoficial</p></div>
+                <div class="rede"><i class="fa-brands fa-instagram fa-lg" style="color: #F04A00 !important;"></i><p>@torvia.oficial</p></div>
+                <div class="rede"><i class="fa-brands fa-whatsapp fa-lg" style="color: #F04A00 !important;" ></i><p>(19) 99671-4835</p></div>
+                <div class="rede"><i class="fa-brands fa-facebook-f fa-lg" style="color: #F04A00 !important;"></i><p>Torvia Oficial</p></div>
+            </div>
+        </div>
+        <span class="linha-rodape"></span>
+        <div class="direitos">
+            <p>© 2026 Torvia S.A. Todos os direitos reservados. CNPJ: 12.345.678/0001-95 <a href="">Termos de Uso</a> | <a href="">Política de Privacidade</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/85a14b1619.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

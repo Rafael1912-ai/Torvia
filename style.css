@@ -1,0 +1,1206 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== CABEÇALHO ===== */
+.topo {
+    width: 100%;
+    height: 15vh;
+    background-color: #FFF0E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-size: 16px;
+    box-shadow: 0 0 30px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    background-image: url(img/logo.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+nav {
+    width: 40%;
+    height: 100%;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a {
+    position: relative;
+    color: #F04A00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #ff4500;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    border: 2px solid #FFF0E2;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+.pesquisa {
+    width: 18%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8px;
+    border: 2px solid #FFF0E2;
+    border-radius: 25px;
+    background-color: #f0980030;
+}
+
+.pesquisa:hover {
+    border-color: #F04A00;
+}
+
+header input[type="text"] {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+}
+
+header input[type="text"]:focus {
+    outline: none;
+}
+
+.cadastrar {
+    width: 9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.cadastrar p:hover {
+    cursor: pointer;
+    color: #F04A00;
+}
+
+.cadastrar:hover {
+    cursor: pointer;
+}
+
+/* ===== HOME / BANNER ===== */
+#HOME {
+    width: 100%;
+    height: 95vh;
+}
+
+.espacotop {
+    width: 100%;
+    height: 15vh;
+}
+
+.corpo {
+    width: 100%;
+    height: 80vh;
+    background-image: url(img/img-carro-banner.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.sombra {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+.corpo h2 {
+    text-align: center;
+}
+
+.corpo button {
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    background-color: #F04A00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.corpo button:hover {
+    cursor: pointer;
+    background-color: #ca4000;
+    border: 2px solid white;
+    transform: translateY(-2px);
+}
+
+/* ===== INFORMAÇÕES DA HOME ===== */
+.homedois {
+    width: 100%;
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+}
+
+.caixapaiL {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixalaranja {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    background-color: #F04A00;
+}
+
+.linhas {
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linhas span {
+    display: block;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    transform: skewX(-43deg);
+}
+
+.caixalaranja h2 {
+    color: white;
+    font-weight: bolder;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.infohome {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding-left: 30px;
+    border-radius: 30px;
+    color: white;
+}
+
+.info h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+.info h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info a {
+    color: white;
+}
+
+.info a:hover {
+    color: #F04A00;
+}
+
+.imginfo1 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.700)),
+        url(img/img-loja-interna.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imginfo2 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.550), rgba(0, 0, 0, 0.550)),
+        url(img/img-entrega-de-chave.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imginfo3 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),
+        url(img/frente\ de\ carro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== CARROSSEL DAS LOJAS OFICIAIS ===== */
+.logos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.logos h2 {
+    font-weight: 700;
+    color: #704938;
+}
+
+.caixaL {
+    width: 100%;
+    position: relative;
+    padding: 0 50px;
+}
+
+.janela {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.trilha {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.conjuntologo {
+    flex: 0 0 calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #E7E0E069;
+    box-shadow: 0 0 10px #00000066;
+}
+
+.conjuntologo:hover .circulo {
+    box-shadow: 0 3px 13px #0000008f;
+}
+
+.conjuntologo:hover {
+    color: #F02000;
+    cursor: pointer;
+}
+
+.toyota, .mercedes, .bmw, .tesla, .honda,
+.volkswagen, .fiat, .jeep, .hyundai {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toyota {
+    background-image: url(img/logo-toyota.png);
+    background-size: 150px;
+}
+
+.mercedes {
+    background-image: url(img/mercedes-benz-logo-png_seeklogo-332844.png);
+    background-size: 135px;
+}
+
+.bmw {
+    background-image: url(img/logo-bmw.png);
+    background-size: 140px;
+}
+
+.tesla {
+    background-image: url(img/logo-tesla.png);
+    background-size: 140px;
+}
+
+.honda {
+    background-image: url(img/logo-honda.png);
+    background-size: 120px;
+}
+
+.volkswagen {
+    background-image: url(img/volkswagen-logo-png_seeklogo-150527.png);
+    background-size: 125px;
+}
+
+.fiat {
+    background-image: url(img/Fiat_logo.svg.webp);
+    background-size: 110px;
+}
+
+.jeep {
+    background-image: url(img/Jeep-Logo-1970-1.png);
+    background-size: 125px;
+}
+
+.hyundai {
+    background-image: url(img/hyundai-logo-1.png);
+    background-size: 140px;
+}
+
+/* Setas do carrossel de logos */
+.setinha {
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F04A00;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.setinha:hover {
+    background-color: #ca4000;
+}
+
+.setinhaE {
+    left: 0;
+}
+
+.setinhaD {
+    right: 0;
+}
+
+.pontos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 10px;
+}
+
+.ponto {
+    width: 40px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: #E7DADA;
+    cursor: pointer;
+}
+
+.ponto.ativo {
+    background-color: #F04A00;
+}
+
+/* ===== SOBRE NÓS ===== */
+.sobreNos {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.caixa1S,
+.caixa3S {
+    width: 90%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textsobrenos {
+    width: 40%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.textsobrenos h2 {
+    width: max-content;
+    border-bottom: 4px solid #ff4500;
+}
+
+.textsobrenos p {
+    font-size: 16px;
+}
+
+.imgempresa,
+.imgequipe {
+    width: 750px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.imgempresa {
+    background-image: url(img/img-empresa-externa.jpg);
+}
+
+.imgequipe {
+    background-image: url(img/img-equipe.jpg);
+}
+
+.caixa2S {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.conjuntovalores {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tituloC2S {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.tituloC2S span {
+    display: block;
+    width: 250px;
+    height: 4px;
+    background-color: #ff4500;
+}
+
+.conjuntoF {
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.conjuntoF h2 {
+    text-decoration: underline 3px solid #ff4500;
+}
+
+.Iaperto, .Iselo, .Iatendente, .Iescudo {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Iaperto {
+    width: 113px;
+    height: 101px;
+    background-image: url(img/icon-comprimento.png);
+}
+
+.Iselo {
+    width: 113px;
+    height: 101px;
+    background-image: url(img/icon-selo-aprovacao.png);
+}
+
+.Iatendente {
+    width: 113px;
+    height: 101px;
+    background-image: url(img/icon-atendente.png);
+}
+
+.Iescudo {
+    width: 103px;
+    height: 91px;
+    background-image: url(img/icon-escudo.png);
+}
+
+/* ===== ÁREA DE CARROS ===== */
+
+/* Área geral dos carros */
+.carros {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Primeira fileira: veículos disponíveis */
+.linhacar1 {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+/* Segunda fileira: modelos mais vendidos */
+.linhacar2 {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.linhacar1 h2,
+.linhacar2 h2,
+.linhacar3 h2 {
+    font-weight: 400;
+}
+
+.modelos {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modelos p {
+    padding: 5px 20px;
+    border: 1px solid rgba(116, 116, 116, 0.625);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modelos p:hover {
+    background-color: rgb(235, 241, 245);
+}
+
+.modelos p:first-child {
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+
+/* Janela do carrossel: mostra só seis cartões */
+.carrossel-carros {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 2px 12px;
+}
+
+/* Faixa que desliza sem mover as setas */
+.trilha-carros {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    padding: 8px 0;
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
+/* Cartões com largura fixa para caberem seis na janela */
+.trilha-carros .boxcar {
+    flex: 0 0 calc((100% - 75px) / 6);
+    min-width: 0;
+    height: 203px;
+    box-sizing: border-box;
+    border-radius: 21px;
+    overflow: hidden;
+}
+
+/* Setas ficam presas à janela, não à faixa que desliza */
+.carrossel-carros .setacar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F04A00;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.carrossel-carros .esquerda {
+    left: 10px;
+}
+
+.carrossel-carros .direita {
+    right: 10px;
+}
+
+.carrossel-carros:hover .setacar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Retângulos indicadores */
+.tracos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.traco {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #dedeea;
+    transition: background-color 0.3s ease;
+}
+
+.traco.ativo {
+    background-color: #F04A00;
+}
+
+/* Conteúdo dos cartões */
+.boxcar {
+    height: 203px;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0 20px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease,box-shadow 0.3s ease,filter 0.3s ease;
+}
+
+.boxcar:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.30);
+    filter: brightness(1.12);
+    z-index: 3;
+}
+
+.boxcar p {
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.boxcar:hover p {
+    transform: translateX(4px);
+}
+
+.logocar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.boxcar:hover .logocar {
+    transform: translateX(4px);
+}
+
+.boxcar:active {
+    transform: scale(0.98);
+}
+
+/* Imagens dos veículos */
+.Cross {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.529)), url(img/T-cross.png);
+    background-size: 400px;
+    background-position: center, -35px;
+}
+
+.Pulse {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(img/Pulse.png);
+    background-size: 370px;
+    background-position: center, -15px;
+}
+
+.Creta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(img/Creta.jfif);
+    background-size: 360px;
+    background-position: center, -20px;
+}
+
+.Song {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(img/Song.jfif);
+    background-size: 330px;
+    background-position: center, 0px;
+}
+
+.Tracker {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(img/Tracker.jfif);
+    background-size: 400px;
+    background-position: center, -20px;
+}
+
+.Compass {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(img/Compass.jfif);
+    background-size: cover;
+    background-position: center, -15px;
+}
+
+.Strada {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.246), rgba(0, 0, 0, 0.257)), url(img/Strada.png);
+    background-size: cover;
+    background-position: center, -10px;
+}
+
+.Polo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.567)), url(img/Polo.png);
+    background-size: 300px;
+    background-position: center, 0px;
+}
+
+.Mini {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(img/Dolphin\ Mini.png);
+    background-size: cover;
+    background-position: center, -20px;
+}
+
+.Tera {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(img/Tera.png);
+    background-size: cover;
+    background-position: center, -15px;
+}
+
+.Argo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.657), rgba(0, 0, 0, 0.474)), url(img/Argo.png);
+    background-size: cover;
+    background-position: center, -15px;
+}
+
+/* Logos das marcas nos cartões */
+.Volkswagen {
+    background-image: url(img/Volkswagen.png);
+    background-size: cover;
+}
+
+.Fiat {
+    background-image: url(img/Fiat.png);
+    background-size: cover;
+}
+
+.Hyundai {
+    background-image: url(img/Hyundai.png);
+    background-size: cover;
+}
+
+.BYD {
+    background-image: url(img/BYD.png);
+    background-size: cover;
+}
+
+.Chevrolet {
+    background-image: url(img/Chevrolet.png);
+    background-size: cover;
+}
+
+.Jeep {
+    background-image: url(img/Jeep.png);
+    background-size: cover;
+}
+
+/* Terceira linha de carros, se utilizada */
+.linhacar3 {
+    width: 78%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* A segunda linha mantém cartões em uma fila */
+.linhacar2 .paiboxcars {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    overflow: visible;
+    padding: 15px 2px 12px;
+}
+
+.linhacar2 .boxcar {
+    flex: 0 0 calc((100% - 75px) / 6);
+    height: 203px;
+}
+
+.contatos {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-bottom: 100px;
+}
+
+.area-formulario {
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.area-formulario h2 {
+    width: max-content;
+    height: max-content;
+    background-color: #F07500;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 10px;
+    padding-inline: 25px;
+    font-size: 22px;
+}
+
+.formulario {
+    width: 100%;
+    height: max-content;
+    padding-block: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 25px;
+    padding: 30px 0px 30px 0px;
+}
+
+.formulario input[type='password'],
+.formulario input[type='email'],
+.formulario input[type='text'] {
+    width: 80%;
+    height: 30px;
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.formulario input[type='password']:focus,
+.formulario input[type='email']:focus,
+.formulario input[type='text']:focus,
+.formulario textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+}
+
+.formulario p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.formulario p a {
+    color: #F04A00;
+}
+
+input[type='submit'] {
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+    border: none;   
+    background-color: #F04A00;
+    color: white;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.42);
+}
+
+input[type='submit']:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.316);
+}
+
+.informacoes {
+    width: 30%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.informacoes h2 {
+    width: max-content;
+    font-family: "Oswald", sans-serif;
+    border-bottom: 3px solid #F04A00;
+}
+
+.info-text-fale-conosco {
+    width: 67%;
+}
+
+.informacoes p {
+    font-weight: 500;
+}
+
+.rodape {
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.rodape-conteudo {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.historia {
+    width: 22%;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer p,
+footer a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.navegacao {
+    width: max-content;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navegacao a {
+    width: max-content;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid black;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navegacao a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #F04A00;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navegacao a:hover::after {
+    transform: scaleX(1);
+}
+
+.navegacao a b {
+    color: #F04A00;
+    font-size: 25px;
+}
+
+.redes {
+    width: max-content;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.endereco {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.rede {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.espaco-footer {
+    width: 22%;
+}
+
+span {
+    display: block;
+    height: 2px;
+    width: 1180px;
+    background-color: white;
+}
+
+.direitos a{
+    text-decoration: none;
+    color: #F04A00;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}    
